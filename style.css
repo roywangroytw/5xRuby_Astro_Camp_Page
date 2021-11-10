@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+  background-color: FFFFFF;
+  color: #394150;
+}
+
+.section_heading {
+  font-size: 2rem;
+}
+
+/* Benefit Section */
+
+.benefit_left,
+.benefit_right {
+  margin: 10px;
+}
+
+.benefit_img {
+  width: 100%;
+  height: 0px;
+  padding-bottom: 60%;
+  overflow: hidden;
+}
+
+.benefit_img img {
+  width: 100%;
+}
+
+.fix-img img {
+  transform: translateY(-150px);
+}
