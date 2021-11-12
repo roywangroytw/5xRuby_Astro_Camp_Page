@@ -1,144 +1,190 @@
-/* Grid Setting ============================================================ */
-:root {
-  --grid-gap: 10px;
-}
-
-.container {
-  width: 100%;
-  max-width: 1200px;
-  /* display: flex;
-    flex-wrap: wrap; */
-  /* 以上直接給row來設定了 */
-  margin: auto;
-  padding: 0 var(--grid-gap);
-  box-sizing: border-box;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: calc(var(--grid-gap) * -1);
-  margin-right: calc(var(--grid-gap) * -1);
-}
-
-[class*="col-"] {
-  box-sizing: border-box;
-  padding: 0 var(--grid-gap);
-}
-
-/* prettier-ignore */
-.col-1 { width: 8.333333%;}
-/* prettier-ignore */
-.col-2 { width: 16.666666%;}
-/* prettier-ignore */
-.col-3 { width: 25%;}
-/* prettier-ignore */
-.col-4 { width: 33.333333%;}
-/* prettier-ignore */
-.col-5 { width: 41.666666%;}
-/* prettier-ignore */
-.col-6 { width: 50%;}
-/* prettier-ignore */
-.col-7 { width: 58.333333%;}
-/* prettier-ignore */
-.col-8 { width: 66.666666%;}
-/* prettier-ignore */
-.col-9 { width: 75%;}
-/* prettier-ignore */
-.col-10 { width: 83.333333%;}
-/* prettier-ignore */
-.col-11 { width: 91.666666%;}
-/* prettier-ignore */
-.col-12 { width: 100%;}
-
-/* ( Pad直向 ) */
-@media screen and (min-width: 768px) {
-  /* prettier-ignore */
-  .col-md-1 { width: 8.333333%;}
-  /* prettier-ignore */
-  .col-md-2 { width: 16.666666%;}
-  /* prettier-ignore */
-  .col-md-3 { width: 25%;}
-  /* prettier-ignore */
-  .col-md-4 { width: 33.333333%;}
-  /* prettier-ignore */
-  .col-md-5 { width: 41.666666%;}
-  /* prettier-ignore */
-  .col-md-6 { width: 50%;}
-  /* prettier-ignore */
-  .col-md-7 { width: 58.333333%;}
-  /* prettier-ignore */
-  .col-md-8 { width: 66.666666%;}
-  /* prettier-ignore */
-  .col-md-9 { width: 75%;}
-  /* prettier-ignore */
-  .col-md-10 { width: 83.333333%;}
-  /* prettier-ignore */
-  .col-md-11 { width: 91.666666%;}
-  /* prettier-ignore */
-  .col-md-12 { width: 100%;}
-}
-
-/* ( Pad橫向 & Pad直向 ) */
-@media screen and (min-width: 1024px) {
-  /* prettier-ignore */
-  .col-lg-1 { width: 8.333333%;}
-  /* prettier-ignore */
-  .col-lg-2 { width: 16.666666%;}
-  /* prettier-ignore */
-  .col-lg-3 { width: 25%;}
-  /* prettier-ignore */
-  .col-lg-4 { width: 33.333333%;}
-  /* prettier-ignore */
-  .col-lg-5 { width: 41.666666%;}
-  /* prettier-ignore */
-  .col-lg-6 { width: 50%;}
-  /* prettier-ignore */
-  .col-lg-7 { width: 58.333333%;}
-  /* prettier-ignore */
-  .col-lg-8 { width: 66.666666%;}
-  /* prettier-ignore */
-  .col-lg-9 { width: 75%;}
-  /* prettier-ignore */
-  .col-lg-10 { width: 83.333333%;}
-  /* prettier-ignore */
-  .col-lg-11 { width: 91.666666%;}
-  /* prettier-ignore */
-  .col-lg-12 { width: 100%;}
-}
-
-/* ( Pad pro橫向 ＆ desktop ) */
-@media screen and (min-width: 1200px) {
-  /* prettier-ignore */
-  .col-xl-1 { width: 8.333333%;}
-  /* prettier-ignore */
-  .col-xl-2 { width: 16.666666%;}
-  /* prettier-ignore */
-  .col-xl-3 { width: 25%;}
-  /* prettier-ignore */
-  .col-xl-4 { width: 33.333333%;}
-  /* prettier-ignore */
-  .col-xl-5 { width: 41.666666%;}
-  /* prettier-ignore */
-  .col-xl-6 { width: 50%;}
-  /* prettier-ignore */
-  .col-xl-7 { width: 58.333333%;}
-  /* prettier-ignore */
-  .col-xl-8 { width: 66.666666%;}
-  /* prettier-ignore */
-  .col-xl-9 { width: 75%;}
-  /* prettier-ignore */
-  .col-xl-10 { width: 83.333333%;}
-  /* prettier-ignore */
-  .col-xl-11 { width: 91.666666%;}
-  /* prettier-ignore */
-  .col-xl-12 { width: 100%;}
-}
-
 /* Other CSS starts from here =====================================================*/
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Noto Sans TC", sans-serif;
+  background-color: #ffffff;
+  color: #394150;
+}
+
+.usps-section,
+.promote,
+.teacher-section-content-box,
+.media-content-box,
+.short-course-content-box,
+.recent-course-content-box,
+.path-course-content-box,
+.social-box,
+.article-section,
+.footer-box {
+  width: 95%;
+  max-width: 1200px;
+  margin: 50px auto 0px auto;
+  position: relative;
+}
+
+.redline {
+  display: inline-block;
+  width: 50px;
+  border: none;
+  border-bottom: 2.5px solid #ff143e;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.sub-heading {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin: 20px auto 50px auto;
+}
+
+.section-cta {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 150px;
+  height: 50px;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #ff143e;
+  border: none;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+.section-cta:hover {
+  cursor: pointer;
+  background-color: #a80e2b;
+}
+
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+strong::selection,
+a::selection {
+  background-color: #ff143e;
+  color: white;
+}
+
+/* NavBar Section */
+
+header {
+  box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.2);
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 60%;
+  height: 70px;
+  margin-right: 20px;
+}
+
+.nav-brand {
+  margin-left: 20px;
+  width: 40%;
+}
+
+.nav-brand h2 {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 70px;
+}
+
+.nav-logo {
+  width: 40px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-size: 1.1rem;
+  margin: 0px 8px;
+  line-height: 70px;
+  display: inline-block;
+  height: 66px;
+  transition: all 0.2s ease;
+}
+
+.nav-link-box {
+  display: flex;
+}
+
+.nav-link-individaul-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.nav-line {
+  height: 4px;
+  background-color: #ff143e;
+  width: 0px;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #ff143e;
+}
+
+.nav-link-individaul-box:hover .nav-line {
+  width: 80%;
+}
+
+/* Hero Image section ==========================================================================================*/
+
+.promote {
+  margin: 100px auto 0px auto;
+}
+
+.promote-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* USP section ==========================================================================================*/
+
+.usps-section {
+  text-align: center;
+}
+
+.usp-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.usp-img {
+  width: 100%;
+}
+
+.usp-title {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.usp-text {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
 }
