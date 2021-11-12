@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-family: "Noto Sans TC", sans-serif;
   background-color: FFFFFF;
@@ -12,22 +13,49 @@ body {
 
 /* Benefit Section */
 
-.benefit_left,
-.benefit_right {
+.benefits {
+  width: 100%;
+}
+
+.item {
   margin: 10px;
 }
 
-.benefit_img {
-  width: 100%;
+/* 新學到的重點！要加到筆記！！！ */
+.benefit_img_box {
+  width: auto;
   height: 0px;
-  padding-bottom: 60%;
+  padding-bottom: 50%;
+  background-color: grey;
   overflow: hidden;
+  position: relative;
 }
 
-.benefit_img img {
+.benefit_img_box img {
   width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  object-position: center center;
+}
+/* 新學到的重點！要加到筆記！！！ */
+
+.txt_box1,
+.txt_box2,
+.txt_box3 {
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
 }
 
-.fix-img img {
-  transform: translateY(-150px);
+.txt_box1 {
+  background-color: #e52058;
+}
+
+.txt_box2 {
+  background-color: #b1125b;
+}
+
+.txt_box3 {
+  background-color: #4f2453;
 }
