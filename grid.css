@@ -1,11 +1,11 @@
 /* Grid Setting ============================================================ */
 :root {
-  --grid-gap: 50px;
+  --grid-gap: 15px;
 }
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   /* display: flex;
       flex-wrap: wrap; */
   /* 以上直接給row來設定了 */
@@ -24,6 +24,7 @@
 [class*="col-"] {
   box-sizing: border-box;
   padding: 0 var(--grid-gap);
+  margin-bottom: 30px;
 }
 
 /* prettier-ignore */
