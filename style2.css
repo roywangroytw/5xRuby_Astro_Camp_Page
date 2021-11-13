@@ -337,3 +337,56 @@ header {
   background-color: #ff143e;
   color: white;
 }
+
+/* Media section ==========================================================================================*/
+
+.media-section {
+  background-color: #f9fafb;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  line-height: 1.5;
+}
+
+.media-content-box .heading-box {
+  text-align: center;
+}
+
+.media-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.media-item {
+  width: 41%;
+  margin: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.media-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.media-source-date {
+  color: #6c727f;
+}
+
+.media-item a {
+  text-decoration: none;
+  color: #394150;
+}
+
+.media-item a:hover {
+  color: #ff143e;
+}
+
+@media screen and (max-width: 768px) {
+  .media-item {
+    width: 95%;
+  }
+}
